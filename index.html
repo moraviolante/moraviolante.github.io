@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -23,36 +22,42 @@
     .hero { background: var(--red); padding: 5rem 2.5rem 7rem; position: relative; overflow: hidden; }
     .hero::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 60px; background: var(--light); clip-path: ellipse(55% 100% at 50% 100%); }
     .hero h1 { font-family: 'Playfair Display', serif; color: var(--light); font-size: clamp(2.2rem, 5vw, 3.2rem); line-height: 1.15; max-width: 600px; margin-bottom: 1.2rem; }
-    .hero p { color: rgba(247,247,247,0.8); font-size: 1rem; max-width: 480px; margin-bottom: 2rem; }
+    .hero p { color: rgba(247,247,247,0.85); font-size: 1rem; line-height: 1.7; max-width: 650px; margin-bottom: 2rem; }
 
-    section { padding: 4rem 2.5rem; }
+    section { padding: 4.5rem 2.5rem; }
     .section-label { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.5rem; opacity: 0.7; }
     h2.section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 2.5rem; }
 
     .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-    .skill-card { background: #fff; border-radius: 24px; padding: 1.5rem; border: 2px solid; transition: transform 0.2s; }
+    .skill-card { background: #fff; border-radius: 24px; padding: 1.8rem; border: 2px solid; transition: transform 0.2s; }
     .skill-card:hover { transform: translateY(-4px); }
-    .skill-name { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; }
-    .skill-desc { font-size: 0.8rem; color: #555; line-height: 1.6; }
+    .skill-name { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .skill-desc { font-size: 0.85rem; color: #555; line-height: 1.6; }
 
     .experience { background: var(--blue); color: var(--light); }
-    .exp-container { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem; }
-    .exp-column h3 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--yellow); border-left: 3px solid var(--yellow); padding-left: 10px; }
+    .exp-container { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 1rem; }
+    .exp-column h3 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--yellow); border-left: 3px solid var(--yellow); padding-left: 12px; }
     .exp-list { list-style: none; }
-    .exp-list li { font-size: 0.85rem; padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); line-height: 1.6; }
+    .exp-list li { font-size: 0.9rem; padding: 0.9rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); line-height: 1.6; }
 
     .sobre { background: var(--green); color: var(--light); }
-    .sobre p { font-size: 0.95rem; line-height: 1.9; max-width: 600px; margin-bottom: 1.5rem; color: rgba(255,255,255,0.9); }
+    .sobre p { font-size: 1rem; line-height: 1.9; max-width: 600px; margin-bottom: 1.5rem; color: rgba(255,255,255,0.9); }
     .chips { display: flex; gap: 0.6rem; flex-wrap: wrap; }
     .chip { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); padding: 5px 16px; border-radius: 20px; font-size: 0.75rem; }
 
     .articles { background: #fffbe6; }
-    .articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
-    .article-card { background: #fff; border-radius: 20px; padding: 1.4rem; border: 2px solid #eee; text-decoration: none; color: inherit; transition: 0.2s; display: flex; flex-direction: column; height: 100%; }
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; }
+    .article-card { background: #fff; border-radius: 20px; padding: 1.5rem; border: 2px solid #eee; text-decoration: none; color: inherit; transition: 0.2s; display: flex; flex-direction: column; height: 100%; }
     .article-card:hover { transform: translateY(-4px); border-color: var(--blue); }
     .article-tag { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; color: var(--blue); margin-bottom: 0.5rem; display: block; }
-    .article-title { font-size: 0.9rem; font-weight: 600; line-height: 1.4; margin-bottom: 0.5rem; }
-    .article-date { font-size: 0.7rem; color: #999; margin-top: auto; }
+    .article-title { font-size: 0.95rem; font-weight: 600; line-height: 1.4; margin-bottom: 1rem; }
+    .article-date { font-size: 0.75rem; color: #999; margin-top: auto; }
+
+    .contacto { background: var(--red); color: var(--light); text-align: center; }
+    .contacto .section-label { justify-content: center; display: flex; }
+    .social-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
+    .social-link { background: rgba(255,255,255,0.15); border: 1.5px solid rgba(255,255,255,0.3); color: var(--light); padding: 12px 24px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; transition: 0.2s; }
+    .social-link:hover { background: rgba(255,255,255,0.25); }
 
     footer { background: #a30606; padding: 1.5rem 2.5rem; color: var(--light); display: flex; justify-content: space-between; font-size: 0.8rem; }
 
@@ -67,12 +72,13 @@
       <li><a href="#experiencia">Experiencia</a></li>
       <li><a href="#sobre">Sobre mí</a></li>
       <li><a href="#articulos">Artículos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
 
   <div class="hero">
     <h1>Una periodista en el mundo de la <em>tecnología.</em></h1>
-    <p>Creatividad, narrativa y curiosidad. Estos fueron los ingredientes elegidos para mi, pero la complejidad de los productos digitales me llevó a añadir un componente clave a la fórmula: la conexión emocional a través de la estrategia.</p>
+    <p>Creatividad, narrativa y una curiosidad insaciable sobre la comunicación. Estos fueron los ingredientes elegidos para una creadora de contenido ideal, pero la saturación de información y la complejidad de los productos digitales me obligaron a añadir otro componente a la fórmula: la conexión emocional a través de la estrategia.</p>
   </div>
 
   <section id="habilidades">
@@ -81,27 +87,27 @@
     <div class="skills-grid">
       <div class="skill-card" style="border-color: var(--red)">
         <div class="skill-name">Redacción creativa</div>
-        <div class="skill-desc">Edición, redacción y planificación de newsletters y copies creativos.</div>
+        <div class="skill-desc">Edición, redacción y planificación de newsletters y copies creativos para diversos formatos.</div>
       </div>
       <div class="skill-card" style="border-color: var(--blue)">
         <div class="skill-name">Social Media</div>
-        <div class="skill-desc">Definición de ejes de contenido, planificación y publicación, gestión de redes sociales.</div>
+        <div class="skill-desc">Definición de ejes de contenido, planificación, publicación y gestión estratégica de redes.</div>
       </div>
       <div class="skill-card" style="border-color: var(--yellow)">
         <div class="skill-name">Gestión de proyectos</div>
-        <div class="skill-desc">Armado y seguimiento de herramientas de gestión, roadmaps y pitches.</div>
+        <div class="skill-desc">Armado de herramientas de gestión, construcción de roadmaps y presentaciones efectivas.</div>
       </div>
       <div class="skill-card" style="border-color: var(--green)">
         <div class="skill-name">Entrevistas</div>
-        <div class="skill-desc">Producción de entrevistas escritas y audiovisuales en tecnología y cultura.</div>
+        <div class="skill-desc">Producción de entrevistas escritas y audiovisuales en tecnología, cultura y mundo laboral.</div>
       </div>
       <div class="skill-card" style="border-color: var(--blue)">
         <div class="skill-name">UX Writing</div>
-        <div class="skill-desc">Briefs, flujos, objetivos por pantalla e ideas a comunicar.</div>
+        <div class="skill-desc">Briefs, arquitectura de información, flujos de usuario y definición de objetivos por pantalla.</div>
       </div>
       <div class="skill-card" style="border-color: var(--yellow)">
         <div class="skill-name">Consultoría & apoyo</div>
-        <div class="skill-desc">Brainstorming, revisión de CV y presencia digital.</div>
+        <div class="skill-desc">Acompañamiento en brainstorming, revisión de CV y optimización de presencia digital.</div>
       </div>
     </div>
   </section>
@@ -111,20 +117,20 @@
     <h2 class="section-title">Mi experiencia profesional</h2>
     <div class="exp-container">
       <div class="exp-column">
-        <h3>UX Designer (3 años)</h3>
+        <h3>UX Writer (3 años)</h3>
         <ul class="exp-list">
-          <li><strong>Estrategia end-to-end:</strong> Parte del ciclo completo de contenido, desde briefs y value props hasta arquitectura de información y carga de idiomas.</li>
-          <li><strong>IA aplicada:</strong> Integración de IA generativa en el diseño, armado de prompts y creación de guidelines para asistentes.</li>
-          <li><strong>Sistematización:</strong> Evolución de la guía de voz y tono; diseño de contenido como un sistema para el journey completo.</li>
-          <li><strong>Colaboración:</strong> Trabajo diario en triada (Producto, IT, UX/UI) negociando trade-offs técnicos.</li>
+          <li><strong>Estrategia end-to-end:</strong> Lidero el ciclo de contenido, desde value props hasta la definición de flujos y arquitectura de información.</li>
+          <li><strong>IA aplicada:</strong> Integro IA generativa en el diseño, armando prompts y guidelines para acelerar la ideación.</li>
+          <li><strong>Sistematización:</strong> Aseguro la consistencia contribuyendo a la guía de voz y tono como un sistema escalable.</li>
+          <li><strong>Colaboración:</strong> Trabajo en triada interdisciplinaria (Producto, IT, UX/UI) negociando trade-offs técnicos.</li>
         </ul>
       </div>
       <div class="exp-column">
-        <h3>Creadora de Contenido (+3 años)</h3>
+        <h3>Creadora de Contenido (3 años)</h3>
         <ul class="exp-list">
-          <li><strong>Posicionamiento:</strong> Estrategia editorial 360° para posicionar marcas como líderes de industria.</li>
-          <li><strong>Producción:</strong> Redacción de +150 notas y +50 newsletters de alto impacto.</li>
-          <li><strong>Entrevistas:</strong> Desarrollo de contenido en tecnología, mundo laboral e historia cultural.</li>
+          <li><strong>Estrategia 360°:</strong> Posicionamiento orgánico de marcas mediante narrativa estratégica en múltiples canales.</li>
+          <li><strong>Producción Editorial:</strong> Redacción de +150 notas y +50 newsletters con enfoque en tecnología y cultura.</li>
+          <li><strong>Comunicación:</strong> Experiencia sólida en entrevistas y manejo de contenido audiovisual frente a cámara.</li>
         </ul>
       </div>
     </div>
@@ -133,7 +139,7 @@
   <section class="sobre" id="sobre">
     <div class="section-label">✦ Sobre mí</div>
     <h2 class="section-title">En búsqueda de contar historias.</h2>
-    <p>A lo largo de mi carrera desarrollé distintas habilidades relacionadas a la comunicación siempre con la creatividad como eje central. Me interesa la intersección entre el periodismo y la tecnología.</p>
+    <p>Desarrollé mi carrera uniendo comunicación y creatividad. Hoy mi foco está en la intersección entre el periodismo y la tecnología, humanizando experiencias digitales.</p>
     <div class="chips">
       <span class="chip">Periodismo</span><span class="chip">Tecnología</span><span class="chip">UX Writing</span><span class="chip">Estrategia</span><span class="chip">IA</span><span class="chip">Audiovisual</span>
     </div>
@@ -173,6 +179,17 @@
         <div class="article-title">Se armó el baile: ¡Amuletos salió a la luz!</div>
         <div class="article-date">Jul 2020</div>
       </a>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <div class="section-label">✦ Contacto</div>
+    <h2 class="section-title">¿Trabajamos juntos?</h2>
+    <p>Escribime para proyectos, consultorías o simplemente para charlar de comunicación.</p>
+    <div class="social-links">
+      <a class="social-link" href="https://www.linkedin.com/in/moraviolantecomunicacion/" target="_blank">LinkedIn ↗</a>
+      <a class="social-link" href="https://www.instagram.com/moviolante/" target="_blank">Instagram ↗</a>
+      <a class="social-link" href="https://moraviolante.wordpress.com/" target="_blank">Mi Blog ↗</a>
     </div>
   </section>
 
